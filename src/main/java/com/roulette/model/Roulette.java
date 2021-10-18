@@ -2,7 +2,9 @@ package com.roulette.model;
 
 import java.util.HashMap;
 
+
 import org.springframework.data.annotation.Id;
+
 
 public class Roulette {
 	@Id
@@ -32,6 +34,10 @@ public class Roulette {
 	}
 	public void setStatus(String status) {
 		this.status = status;
+	}
+	public void addBetToList(Bet bet) {
+		int key = betList.size();
+		betList.put(key, bet);
 	}
 	
 }
