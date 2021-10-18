@@ -31,7 +31,6 @@ public class ControllerRoulette {
 	}	
 	@PutMapping(Constants.OPEN_ROULETTE)
 	public OutputDTO openRoulette(@PathVariable("id") Long id) {
-		System.out.println("a");
 		return serviceRoulette.openRoulette(id);
 	}
 	@PostMapping(Constants.PLACE_BET)
